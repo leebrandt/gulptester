@@ -1,4 +1,4 @@
-kcdc-web
+Basics of MEAN-Gulp
 ========
 
-The website for kcdc
+The basics of a MEAN website. Hand spun so I can learn.
