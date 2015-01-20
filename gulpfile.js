@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp'),
     nodemon = require('gulp-nodemon'),
     connect = require('gulp-connect'),
@@ -42,7 +44,7 @@ gulp.task('connect', function(){
     connect.server({
         root: 'public',
         liveReload: true
-    })
+    });
 });
 
 gulp.task('watch', function () {
@@ -51,11 +53,11 @@ gulp.task('watch', function () {
 
 gulp.task('dev', ['sass', 'wiredep', 'connect', 'watch'], function(){
     nodemon({
-        script: './server/app.js',
+        script: './server.js',
         env: {'NODE_ENV':'development'},
         node_args: ['--debug'],
         ext: 'html js' })
         .on('restart', function () {
-            console.log('restarted!')
-        })
+            console.log('restarted!');
+        });
 });
