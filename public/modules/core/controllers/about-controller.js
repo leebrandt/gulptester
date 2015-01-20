@@ -1,4 +1,4 @@
-angular.module('kcdc')
+angular.module('core')
 	.controller('AboutCtrl', [function(){
 		'use strict';
 		var self = this;
