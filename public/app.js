@@ -5,7 +5,11 @@ angular.module('kcdc', ['ui.router'])
     $stateProvider
       .state('home',{
         url: '/',
-        templateUrl: 'components/home/home.html'
+        templateUrl: 'modules/home/home.html'
+      })
+      .state('about',{
+        url: '/about',
+        templateUrl: 'modules/about/about.html'
       });
 
     $urlRouterProvider.otherwise('/');

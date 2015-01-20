@@ -12,7 +12,8 @@ var gulp = require('gulp'),
  */
 var paths = {
     appjs: [
-        './public/app.module.js',
+        './public/app.js',
+        './public/app-controller.js',
         './public/modules/**/*.js'
     ],
     sass: ['./public/scss/**/*.scss']

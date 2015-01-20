@@ -6,7 +6,12 @@
 </head>
 <body data-ng-cloak data-ng-controller="AppCtrl">
   <header>
-    Stuff in the header
+    <nav>
+      <ul>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/about">About</a></li>
+      </ul>
+    </nav>
   </header>
   <div data-ng-view data-ui-view></div>
   <footer>
@@ -16,10 +21,11 @@
   <script src="/lib/angular/angular.min.js"></script>
   <script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
 
-
+  <!-- inject:js -->
   <script src="/app.js"></script>
   <script src="/app-controller.js"></script>
-  <script src="/components/home/home-controller.js"></script>
-
+  <script src="/modules/about/about-controller.js"></script>
+  <script src="/modules/home/home-controller.js"></script>
+  <!-- endinject-->
 </body>
 </html>
